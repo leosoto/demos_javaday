@@ -1,0 +1,18 @@
+<class-mappings>
+	<map from="javaday.Cliente" to="javaday.Persona">
+		<attr src="identificador" dst="rut"/>
+		<attr src="nombreCompleto" dst="nombre"/>		
+	</map>
+	<map from="otrosistema.Cliente" to="javaday.Cliente">
+		<attr src="id" dst="identificador"/>
+		<attr src="nombreCompleto" dst="nombreCompleto"/>
+	</map>
+</class-mappings>
+
+<!-- 
+
+Codigo tentativo:
+
+Persona p = (Persona) Mapper.map(clienteOtroSistema, Persona.class);
+
+ -->
